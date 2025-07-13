@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <main class="main">
+        <img src="./images/Logo.png" class="logo" alt="logo" />
+
+        <aside class="contact">
+            <div class="contact__wrapper">
+                <figure class="contact__img-wrapper">
+                    <img src="./images/myPhoto.jpg" class="contact__img" alt="my photo" />
+                </figure>
+
+                <div class="contact__info">
+                    <div class="contact__header">
+                        <h1 class="contact__name">
+                            Нестеров Илья
+                        </h1>
+
+                        <p class="contact__age">
+                            21 год, Воронеж
+                        </p>
+                    </div>
+
+                    <ul class="contact__socials">
+                        <li class="contact__socials-item">
+                            <img src="./images/phone.svg" alt="Иконка телефона" class="contact__icon">
+                            <a href="tel:+79081457112" class="contact__link">
+                                +7 908 145 71 12
+                            </a>
+                        </li>
+
+                        <li class="contact__socials-item">
+                            <img src="./images/mail.svg" alt="Иконка почты" class="contact__icon">
+                            <a href="mailto:ilya.nesterov2003@yandex.ru" class="contact__link">
+                                ilya.nesterov2003@yandex.ru
+                            </a>
+                        </li>
+
+                        <li class="contact__socials-item">
+                            <img src="./images/telegram.svg" alt="Иконка Telegram" class="contact__icon">
+                            <a href="https://t.me/DJNest" class="contact__link" target="_blank">
+                                DJNest
+                            </a>
+                        </li>
+
+                        <li class="contact__socials-item">
+                            <img src="./images/github.svg" alt="Иконка GitHub" class="contact__icon">
+                            <a href="https://github.com/ilyhan" class="contact__link" target="_blank">
+                                github.com/ilyhan
+                            </a>
+                        </li>
+                    </ul>
+
+                    <svg class="contact__decoration" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M29.9999 0C31.4999 8.99996 43.4998 17.7157 59.9999 19L30 19L29.9999 19L0 19C16.5 17.7157 28.5 8.99997 29.9999 0Z" />
+                    </svg>
+                </div>
+            </div>
+        </aside>
+
+        <div class="wrapper">
+            <section class="bio">
+                <p class="bio__text">
+                    Привет! Меня зовут Илья, и я фронтенд-разработчик с опытом полтора года.
+                    Свой путь в IT начал более 4 лет назад, изучив основы HTML, CSS и JavaScript. 
+                    Верстал лендинги для себя и друзей. В профессиональную фронтенд-разработку пришел 
+                    полтора года назад, сразу получив предложение о стажировке. 
+                </p>
+
+                <p class="bio__text">Подробнее про стажировки:</p>
+
+                <ol>
+                    <li class="bio__text">
+                        РЕЛЭКС <br/>
+                        Месячная офлайн стажировка, на которой в команде разрабатывал новый функционал для
+                        внутреннего продукта. Команда состояла из Frontend, Backend и QA. 
+                    </li>
+
+                    <li class="bio__text">
+                        Neoflex <br/>
+                        Обучался в Neostudy (онлайн платфора от Neoflex), параллельно разрабатывая большой 
+                        проект банка с функциональностью кредитного калькулятора. Работал под руководством 
+                        опытного ментора. По окончании обучения участвовал в хакатоне NeoHack.
+                    </li>
+                </ol>
+
+                <p class="bio__text">
+                    Я всегда стараюсь быть в курсе последних технологических тенденций и постоянно улучшать свои 
+                    навыки. Изучал и работал с библиотеками React, Redux Toolkit, Tanstack Query. Также пробовал
+                    писать тесты на Jest и Vitest.
+                </p>
+            </section>
+
+            <section class="resume">
+                <div class="resume__item">
+                    <h2 class="resume__title">
+                        Образование
+                    </h2>
+
+                    <div class="resume__info">
+                        <div>
+                            <p class="resume__company">
+                                Воронежский Государственный Университет
+                            </p>
+    
+                            <p class="resume__description">
+                                Фудаментальная Информатика и Информационные Технологии
+                            </p>
+    
+                            <p class="resume__description">2022-2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume__item">
+                    <h2 class="resume__title">
+                        Карьера
+                    </h2>
+
+                    <div class="resume__info">
+                        <div>
+                            <p class="resume__company">
+                                РЕЛЭКС
+                            </p>
+
+                            <p class="resume__description">
+                                Стажер Frontend (React)
+                            </p>
+
+                            <p class="resume__description">Апрель 2024</p>
+                        </div>
+                        <div>
+                            <p class="resume__company">
+                                Neoflex
+                            </p>
+
+                            <p class="resume__description">
+                                Стажер Frontend (React)
+                            </p>
+
+                            <p class="resume__description">Ноябрь 2024 - Февраль 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume__item">
+                    <h2 class="resume__title">
+                        Навыки
+                    </h2>
+
+                    <div class="resume__info">
+                        <ul class="resume__skills">
+                            <li class="resume__skill-item">HTML</li>
+                            <li class="resume__skill-item">CSS</li>
+                            <li class="resume__skill-item">TypeScript</li>
+                            <li class="resume__skill-item">React</li>
+                            <li class="resume__skill-item">Redux Toolkit</li>
+                            <li class="resume__skill-item">Tanstack Query</li>
+                            <li class="resume__skill-item">Jest</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <svg class="resume__decoration" viewBox="0 0 60 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0.5 C11.5 0.5 25 6 30 19.5 C35.0177 6.02722 49 0.5 60 0.5" />
+                </svg>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

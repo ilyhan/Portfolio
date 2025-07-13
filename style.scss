@@ -1,0 +1,34 @@
+@import './styles/var',
+'./styles/mixin',
+'./styles/normolize',
+'./styles/blocks/contact',
+'./styles/blocks/logo',
+'./styles/blocks/resume',
+'./styles/blocks/bio';
+
+.body {
+    width: 100%;
+}
+
+.main {
+    position: relative;
+    max-width: 1440px;
+    padding: 40px;
+    margin: 0 auto;
+    display: flex;
+    gap: 31px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .main{
+        gap: 40px;
+        padding: 25px;
+        flex-direction: column;
+    }
+}

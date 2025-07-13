@@ -1,0 +1,16 @@
+@mixin clampText($min, $max) {
+    font-size: clamp(#{$min}px,
+        #{$max / 1024 * 100}vw,
+        #{$max}px);
+}
+
+@mixin showAnimation($dur: 0) {
+    animation: show 1s ease #{$dur}s forwards;
+
+    @keyframes show {
+        to {
+            translate: 0;
+            opacity: 1;
+        }
+    }
+}

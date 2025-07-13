@@ -1,0 +1,14 @@
+
+.bio {
+    max-width: 700px;
+    color: $color-white;
+    
+    translate: 0px 60px;
+    opacity: 0.1;
+    @include showAnimation(0.1);
+
+    &__text {
+        @include clampText($text-m-small, $text-small);
+        line-height: 1.35;
+    }
+}

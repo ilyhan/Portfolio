@@ -1,0 +1,133 @@
+.resume {
+    position: relative;
+    width: 100%;
+    flex-grow: 1;
+    outline: 1px solid $color-white;
+    margin-top: 18px;
+    padding: 47px 27px;
+    color: $color-white;
+
+    translate: 0px 60px;
+    opacity: 0.1;
+    @include showAnimation(0.2);
+
+    &__item {
+        display: grid;
+        grid-template-columns: 125px auto;
+        align-items: start;
+        gap: 72px;
+        padding-block: 20px;
+        border-bottom: 1px solid $color-white-tr;
+
+        &:first-of-type {
+            padding-top: 0px;
+        }
+
+        &:last-of-type {
+            border: none;
+            padding-bottom: 0;
+        }
+    }
+
+    &__title {
+        font-size: #{$text-subtitle}px;
+        font-family: "Redcollar", sans-serif;
+        margin: 0;
+    }
+
+    &__company {
+        @include clampText($text-m-small, $text-small);
+        margin: 0;
+    }
+
+    &__description {
+        @include clampText($text-m-small, $text-small);
+        margin-block: 5px 0px;
+        opacity: .4;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &:before {
+        position: absolute;
+        content: '';
+        top: -2px;
+        left: 30px;
+        width: 60px;
+        height: 3px;
+        background-color: $color-main;
+        z-index: 1;
+    }
+
+    &__decoration {
+        position: absolute;
+        top: -1px;
+        left: 30px;
+        stroke: $color-white;
+        stroke-width: 1px;
+        width: 60px;
+        fill: none;
+        z-index: 2;
+    }
+
+    &__skills {
+        display: flex;
+        column-gap: 32px;
+        row-gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    &__skill-item {
+        @include clampText($text-m-small, $text-small);
+    }
+}
+
+@media (max-width: $breakpoint-laptop) {
+    .resume {
+        padding: 45px 20px;
+
+        &__item {
+            gap: 30px;
+        }
+    }
+}
+
+
+@media (max-width: $breakpoint-tablet) {
+    .resume {
+        &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}
+
+
+@media (max-width: $breakpoint-mobile) {
+    .resume {
+        padding: 40px 15px;
+
+        &__item {
+            gap: 16px;
+        }
+
+        &:before {
+            left: 50%;
+            translate: -50%;
+        }
+
+        &__decoration {
+            left: 50%;
+            translate: -50%;
+        }
+
+        &__skills {
+            column-gap: 16px;
+        }
+    }
+}

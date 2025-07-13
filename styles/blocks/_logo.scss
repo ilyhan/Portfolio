@@ -1,0 +1,10 @@
+
+.logo {
+    position: absolute;
+    right: 40px;
+    top: 26px;
+    
+    translate: 0px 60px;
+    opacity: 0.1;
+    @include showAnimation(0.1);
+}
